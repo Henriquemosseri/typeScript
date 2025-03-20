@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partida</title>
+</head>
+
+<body>
+    <form id="formPartida">
+        <input type="text" id="mandante" placeholder="Time Mandante" required>
+        <input type="text" id="visitante" placeholder="Time Visitante" required>
+        <select id="campeonatoId" required>
+            <!-- Opções de campeonatos serão preenchidas dinamicamente -->
+        </select>
+        <input type="date" id="data" required>
+        <button type="submit">Salvar Partida</button>
+    </form>
+    <hr>
+
+    <table id="tbPartidas" border="1">
+        <!-- Tabela de partidas será preenchida dinamicamente -->
+    </table>
+</body>
+<script src="partida.js" type="text/javascript"></script>
+<script>
+    document.getElementById('formPartida').addEventListener('submit', salvarPartida);
+</script>
+</html>
