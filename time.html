@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro de time: </h1>
+    <body>
+        <form id="formTime">
+            <input type="text" id="nomeCompleto" placeholder="nome completo" required>
+            <input type="text" id="nomeCurto" placeholder="nome curto" required>
+            <button type="submit">Salvar Time</button>
+        </form>
+
+        <hr>
+        <table  border="1">
+            <thead>
+                <tr>
+                    <th>Nome completo</th>
+                    <th>Nome curto</th>
+                    <th>Edição</th>
+                </tr>
+            </thead>
+            <tbody id="tbTime">
+
+        </table>
+
+</body>
+<script src="time.js" type="text/javascript"></script>
+<script>
+    document.getElementById('formTime').addEventListener('submit', salvarTime);
+</script>
+</html>
